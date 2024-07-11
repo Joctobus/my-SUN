@@ -1,0 +1,13 @@
+import math
+
+# Радиус Солнца в километрах
+radius_sun_km = 696340
+
+# Площадь поверхности сферы
+def surface_area_of_sphere(radius):
+    return 4 * math.pi * (radius ** 2)
+
+# Вычисление площади поверхности Солнца
+surface_area_sun = surface_area_of_sphere(radius_sun_km)
+
+print(f"The surface area of the Sun is approximately {surface_area_sun:.2e} square kilometers.")
